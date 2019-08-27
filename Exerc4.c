@@ -72,7 +72,7 @@ void verificar()
 		}
 		else if (nota[i] < 5)
 		{
-			strcpy(situacao[i], "aeprovado");
+			strcpy(situacao[i], "reprovado");
 		}
 	}
 }
