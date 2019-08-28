@@ -9,7 +9,6 @@ int main() {
 		printf("Digite o %d numero: ", i);
 		scanf("%d", &e[i]);
 	}
-	
 	for (i = 0; i < 10; i++)
 	{
 		if (e[i] > maior)
@@ -21,7 +20,5 @@ int main() {
 			menor = e[i];
 		}
 	}
-	
 	printf("\nMenor numero: %d \nMaior numero: %d", menor, maior);
-
 }
