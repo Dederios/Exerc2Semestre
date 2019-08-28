@@ -21,4 +21,5 @@ int main() {
 		}
 	}
 	printf("\nMenor numero: %d \nMaior numero: %d", menor, maior);
+	return 0;
 }
