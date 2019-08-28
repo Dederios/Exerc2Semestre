@@ -11,7 +11,7 @@ int main() {
 	}
 	
 	printf("\nSequencia normal: ");
-	
+
 	for (i = 0; i < 20; i++)
 	{
 		printf("%d  ", n[i]);
@@ -24,7 +24,6 @@ int main() {
 		n[x] = aux;
 		n[i] = aux1;
 		x--;
-
 	}
 	
 	printf("\n\nSequencia invertida: ");
