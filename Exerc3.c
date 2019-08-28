@@ -30,7 +30,7 @@ int main() {
 			numeromenor = n[i];
 		}
 	}
-	
 	printf("\nO numero do menor aluno: %d com o tamanho de %.2f", numeromenor, alturamenor);
 	printf("\nO numero do maior aluno: %d com o tamanho de %.2f", numeromaior, alturamaior);
+	return 0;
 }
