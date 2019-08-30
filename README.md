@@ -10,5 +10,6 @@ Exercício 3: Elabore um algoritmo em C que leia dez conjuntos de dois valores, 
 Exercício 4: Elabore um programa que permita corrigir as provas dos alunos de uma Instituição de Ensino que elabora as provas com 10 questões. O sistema deverá permitir inserir:
 - O Gabarito com dez alternativas de A a E.
 - Os nomes dos alunos com seus respectivos cursos e as suas notas de A a E.
+
 E deverá exibir a relação de notas com a mensagemn de “APROVADO” com nota maior ou igual a 5,0 e “REPROVADO” para os demais.
 
