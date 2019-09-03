@@ -6,10 +6,10 @@
 #include <conio.h>
 #include <ctype.h>
 
-//Declaração de função
+//DeclaraÃ§Ã£o de funÃ§Ã£o
 void cadastro();
 
-//Declaração de variáveis globais
+//DeclaraÃ§Ã£o de variÃ¡veis globais
 int i = 0, faltas[10], cont = 0;
 float n1[10], n2[10], mf[10];
 char data[11], rgm[10][10], nome[10][20], curso[10][20], situacao[10][20];
@@ -22,26 +22,26 @@ int main()
 	do
 	{
 		system("cls");
-		printf("Bem Vindo ao programa de Gestão acadêmica");
+		printf("Bem Vindo ao programa de GestÃ£o acadÃªmica");
 		printf("\n\n(1) Cadastro");
 		printf("\n(6) Sair\n");
 		scanf("%d", &menu);
 		switch (menu)
 		{
 			case 1:
-				cadastro(); //Chamando a função
+				cadastro(); //Chamando a funÃ§Ã£o
 				break;
 			case 6:
 				break;
 			default:
-				printf("\nOpcão inválida utilize somente os números de 1 a 6\n");
+				printf("\nOpcÃ£o invÃ¡lida utilize somente os nÃºmeros de 1 a 6\n");
 				system("pause");
 		}
 	}
 	while (menu != 6);
 }
 
-void cadastro() //Função que cadastra o aluno, seu rgm, notas e faltas.
+void cadastro() //FunÃ§Ã£o que cadastra o aluno, seu rgm, notas e faltas.
 {
 	char ano[3], contchar[10];
 	int dc = 0;
@@ -70,7 +70,7 @@ void cadastro() //Função que cadastra o aluno, seu rgm, notas e faltas.
 			fflush(stdin);
 			gets(nome[i]);
 			if (nome[i][0] == '\0' || nome[i][0] == ' ') 
-				printf("\nDigite novamente, sem espaços no começo.\n");
+				printf("\nDigite novamente, sem espaÃ§os no comeÃ§o.\n");
 		}
 		while(nome[i][0] == '\0' || nome[i][0] == ' ');
 	
@@ -80,7 +80,7 @@ void cadastro() //Função que cadastra o aluno, seu rgm, notas e faltas.
 			fflush(stdin);
 			gets(curso[i]);
 			if (curso[i][0] == '\0' || curso[i][0] == ' ') 
-				printf("\nDigite novamente, sem espaços no começo.\n");
+				printf("\nDigite novamente, sem espaÃ§os no comeÃ§o.\n");
 		} 
 		while(curso[i][0] == '\0' || curso[i][0] == ' ');
 		
@@ -90,7 +90,7 @@ void cadastro() //Função que cadastra o aluno, seu rgm, notas e faltas.
 			fflush(stdin);
 			scanf("%f", &n1[i]);
 			if (n1[i] < 0 || n1[i] > 10) 
-				printf("\nN1 inválida, digite somente os números de 0 a 10.\n");
+				printf("\nN1 invÃ¡lida, digite somente os nÃºmeros de 0 a 10.\n");
 		}
 		while (n1[i] < 0 || n1[i] > 10);
 		
@@ -100,7 +100,7 @@ void cadastro() //Função que cadastra o aluno, seu rgm, notas e faltas.
 			fflush(stdin);
 			scanf("%f", &n2[i]);
 			if (n2[i] < 0 || n2[i] > 10) 
-				printf("\nN2 inválida, digite somente os números de 0 a 10.\n");
+				printf("\nN2 invÃ¡lida, digite somente os nÃºmeros de 0 a 10.\n");
 		}
 		while (n2[i] < 0 || n2[i] > 10);
 		
@@ -112,7 +112,7 @@ void cadastro() //Função que cadastra o aluno, seu rgm, notas e faltas.
 			fflush(stdin);
 			scanf("%d", &faltas[i]);
 			if (faltas[i] < 0 || faltas[i] > 80) 
-				printf("\nO total de faltas não pode exceder 80 e nem menor que 0.\n");	
+				printf("\nO total de faltas nÃ£o pode exceder 80 e nem menor que 0.\n");	
 		}
 		while (faltas[i] < 0 || faltas[i] > 80);
 		
