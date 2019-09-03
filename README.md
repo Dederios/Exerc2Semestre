@@ -20,11 +20,11 @@ Exercício Gestão Academica (Em andamento): O Programa deverá ter uma tela de 
 - Exclusão
 - Relatório
 
-Tela de Cadastro: Deverá permitir cadastrar os dados que serão inseridos pelos usuários e ser armazenados nos vetores criados. São eles:
-  RGM do Aluno (numerico inteiro ou string)
-  Nome Completo (string)
-  Curso (string)
-  N1 (numerico real)
-  N2 (numerico real)
-  Total de Faltas (numérico inteiro)
-  Média Final  (numerico real)
+Tela de Cadastro: Deverá permitir cadastrar os dados que serão inseridos pelos usuários e ser armazenados nos vetores criados.
+- RGM do Aluno (numerico inteiro ou string)
+- Nome Completo (string)
+- Curso (string)
+- N1 (numerico real)
+- N2 (numerico real)
+- Total de Faltas (numérico inteiro)
+- Média Final  (numerico real)
