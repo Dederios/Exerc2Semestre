@@ -13,3 +13,9 @@ Exercício 4: Elabore um programa que permita corrigir as provas dos alunos de u
 
 E deverá exibir a relação de notas com a mensagemn de “APROVADO” com nota maior ou igual a 5,0 e “REPROVADO” para os demais.
 
+Exercício Gestão Academica (Em andamento): O Programa deverá ter uma tela de apresentação, MENU, com as seguintes opções: 
+- Cadastro (x)
+- Consulta
+- Alteração
+- Exclusão
+- Relatório
