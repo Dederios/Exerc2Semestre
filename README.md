@@ -28,3 +28,8 @@ Tela de Cadastro: Deverá permitir cadastrar os dados que serão inseridos pelos
 - N2 (numerico real)
 - Total de Faltas (numérico inteiro)
 - Média Final  (numerico real)
+
+Restrições da tela de cadastro:
+- O Campo RGM deve ser iniciado com o ano (19) e os demais dígitos gerados automaticamente.
+- O Campo Media deverá ser calculado pela formula: MF=(N1+N2*2)/3
+- O campo total de faltas não poderá exceder o limite de 80 aulas semestrais
