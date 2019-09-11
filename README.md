@@ -35,7 +35,7 @@ Restrições da tela de cadastro:
 - O campo total de faltas não poderá exceder o limite de 80 aulas semestrais
 
 Tela de Consulta:
-- Consulta por RA
+- Consulta por RGM
 - Consulta por Nome
 - Melhor Aluno do Curso
 - Consulta por Curso
