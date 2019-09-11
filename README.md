@@ -15,7 +15,7 @@ E deverá exibir a relação de notas com a mensagemn de “APROVADO” com nota
 
 Exercício Gestão Academica (Em andamento): O Programa deverá ter uma tela de apresentação, MENU, com as seguintes opções: 
 - Cadastro (x)
-- Consulta
+- Consulta (x)
 - Alteração
 - Exclusão
 - Relatório
