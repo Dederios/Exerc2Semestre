@@ -36,6 +36,9 @@ Restrições da tela de cadastro:
 
 Tela de Consulta:
 - Consulta por RA
+
 - Consulta por Nome
+
 – Melhor Aluno do Curso
+
 – Consulta por Curso
