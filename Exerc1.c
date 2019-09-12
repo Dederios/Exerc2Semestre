@@ -2,22 +2,22 @@
 #include <stdlib.h>
 
 int main() {
-	int e[10], i = 0, maior = 0, menor = 100;
+	int num[10], i = 0, maior = 0, menor = 100;
 	
 	for (i = 0; i < 10; i++)
 	{
 		printf("Digite o %d numero: ", i);
-		scanf("%d", &e[i]);
+		scanf("%d", &num[i]);
 	}
 	for (i = 0; i < 10; i++)
 	{
-		if (e[i] > maior)
+		if (num[i] > maior)
 		{
-			maior = e[i];
+			maior = num[i];
 		}
-		if (e[i] < menor)
+		if (num[i] < menor)
 		{
-			menor = e[i];
+			menor = num[i];
 		}
 	}
 	printf("\nMenor numero: %d \nMaior numero: %d", menor, maior);
