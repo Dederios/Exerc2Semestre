@@ -1,7 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int main() {
+int main()
+{
 	int n[20], i = 0, aux = 0, aux1 = 0, x = 19;
 	
 	for (i = 0; i < 20; i++)
