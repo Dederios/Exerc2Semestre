@@ -41,12 +41,10 @@ Tela de Consulta:
 - Consulta por Curso
 
 Tela de Alteração:
-
--Deve ser fornecido o RA do Aluno e em seguida deve ser exibido o seu conteúdo com um numero indicando o campo a ser alterado.
+- Deve ser fornecido o RA do Aluno e em seguida deve ser exibido o seu conteúdo com um numero indicando o campo a ser alterado.
 
 Tela de Exclusão:
-
--Deve ser fornecido o RA do Aluno e em seguida deve ser exibido o seu conteudo com uma confirmação de exclusão.
+- Deve ser fornecido o RA do Aluno e em seguida deve ser exibido o seu conteudo com uma confirmação de exclusão.
 
 Tela de Relatório:
 - Relatório 1: Devem ser listados em forma de relatorio todos os Alunos que estão REPROVADOS.
