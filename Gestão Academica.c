@@ -12,7 +12,7 @@
 #define KEY_DOWN 80
 #define KEY_ESC 27
 #define KEY_ENTER 13
-//DeclaraÁ„o de Macros
+//Declara√ß√£o de Macros
 
 int Menu();
 void cadastro();
@@ -20,7 +20,7 @@ void consulta();
 void alteracao();
 void exclusao();
 void relatorio();
-//DeclaraÁ„o das funÁıes
+//Declara√ß√£o das fun√ß√µes
 
 void gotoxy(int x, int y)
 {
@@ -30,7 +30,7 @@ void gotoxy(int x, int y)
 int  faltas[10], cont = 0, submenu = 0;
 float n1[10], n2[10], media[10];
 char data[11], rgm[10][10], nome[10][20], curso[10][20];
-//VarÌaveis Globais
+//Var√≠aveis Globais
 
 int main()
 {
@@ -72,7 +72,7 @@ int main()
 			case 6:
 				break;
 			default:
-				printf("\nOpc„o inv·lida utilize somente os n˙meros de 1 a 6\n");
+				printf("\nOpc√£o inv√°lida utilize somente os n√∫meros de 1 a 6\n");
 				system("pause");
 		}
 	}
@@ -85,15 +85,15 @@ int Menu()
 	while(1) 
 	{
 		system("cls");
-		printf("Bem Vindo ao programa de Gest„o acadÍmica\n");
+		printf("Bem Vindo ao programa de Gest√£o acad√™mica\n");
 		printf("|=====================================|\n");
-		printf("|  CÛdigo     |         OpÁ„o         |\n");
+		printf("|  C√≥digo     |         Op√ß√£o         |\n");
 		printf("|=====================================|\n");
 		printf("|     %s      |        Cadastro       |\n", (op == 1) ? "->" : "01");
 		printf("|     %s      |        Consulta       |\n", (op == 2) ? "->" : "02");
-		printf("|     %s      |        AlteraÁ„o      |\n", (op == 3) ? "->" : "03");
-		printf("|     %s      |        Exclus„o       |\n", (op == 4) ? "->" : "04");
-		printf("|     %s      |        Rel·torio      |\n", (op == 5) ? "->" : "05");
+		printf("|     %s      |        Altera√ß√£o      |\n", (op == 3) ? "->" : "03");
+		printf("|     %s      |        Exclus√£o       |\n", (op == 4) ? "->" : "04");
+		printf("|     %s      |        Rel√°torio      |\n", (op == 5) ? "->" : "05");
 		printf("|     %s      |          Sair         |\n", (op == 6) ? "->" : "06");
 		printf("=======================================\n");
 		key = getch();
@@ -151,7 +151,7 @@ void cadastro()
 			gets(nome[cont]);
 			if (nome[cont][0] == '\0' || nome[cont][0] == ' ')
 			{
-				printf("\nDigite novamente, sem espaÁos no comeÁo.\n");
+				printf("\nDigite novamente, sem espa√ßos no come√ßo.\n");
 				system("pause");
 			} 
 			else
@@ -170,7 +170,7 @@ void cadastro()
 			gets(curso[cont]);
 			if (curso[cont][0] == '\0' || curso[cont][0] == ' ') 
 			{
-				printf("\nDigite novamente, sem espaÁos no comeÁo.\n");
+				printf("\nDigite novamente, sem espa√ßos no come√ßo.\n");
 				system("pause");
 			} 
 			else
@@ -189,7 +189,7 @@ void cadastro()
 			scanf("%f", &n1[cont]);
 			if (n1[cont] < 0 || n1[cont] > 10)
 			{
-				printf("\nN1 inv·lida, digite somente os n˙meros de 0 a 10.\n");
+				printf("\nN1 inv√°lida, digite somente os n√∫meros de 0 a 10.\n");
 				system("pause");
 			} 	
 		}
@@ -202,7 +202,7 @@ void cadastro()
 			scanf("%f", &n2[cont]);
 			if (n2[cont] < 0 || n2[cont] > 10)
 			{
-				printf("\nN2 inv·lida, digite somente os n˙meros de 0 a 10.\n");
+				printf("\nN2 inv√°lida, digite somente os n√∫meros de 0 a 10.\n");
 				system("pause");
 			} 
 		}
@@ -217,7 +217,7 @@ void cadastro()
 			scanf("%d", &faltas[cont]);
 			if (faltas[cont] < 0 || faltas[cont] > 80) 
 			{
-				printf("\nO total de faltas n„o ser menor que 0 e nem maior que 80.\n");	
+				printf("\nO total de faltas n√£o ser menor que 0 e nem maior que 80.\n");	
 				system("pause");
 			} 
 		}
@@ -257,7 +257,7 @@ void consulta()
 					}
 				}
 				if (achourgm != 1)
-					printf("\nRGM n„o encontrado");
+					printf("\nRGM n√£o encontrado");
 				else
 				{
 					printf("\nNome: %s", nome[id]);
@@ -285,7 +285,7 @@ void consulta()
 					gets(nconsulta);
 					if (nconsulta[0] == '\0' || nconsulta[0] == ' ')
 					{
-						printf("\nDigite novamente, sem espaÁos no comeÁo.\n");
+						printf("\nDigite novamente, sem espa√ßos no come√ßo.\n");
 						system("pause");
 					}	
 					else
@@ -309,7 +309,7 @@ void consulta()
 					}
 				}
 				if (achou != 1)
-					printf("\nNome n„o cadastrado");
+					printf("\nNome n√£o cadastrado");
 					
 				achou = 0;	
 		
@@ -330,7 +330,7 @@ void consulta()
 					gets(cursoconsulta);
 					if (cursoconsulta[0] == '\0' || cursoconsulta[0] == ' ')
 					{
-						printf("\nDigite novamente, sem espaÁos no comeÁo.\n");
+						printf("\nDigite novamente, sem espa√ßos no come√ßo.\n");
 						system("pause");
 					}
 					else 
@@ -366,7 +366,7 @@ void consulta()
 				}
 					
 				if (achou != 1)
-					printf("\nCurso n„o encontrado");
+					printf("\nCurso n√£o encontrado");
 					
 				achou = 0;	
 				
@@ -388,7 +388,7 @@ void consulta()
 					gets(cursoconsulta);
 					if (cursoconsulta[0] == '\0' || cursoconsulta[0] == ' ')
 					{
-						printf("\nDigite novamente, sem espaÁos no comeÁo.\n");
+						printf("\nDigite novamente, sem espa√ßos no come√ßo.\n");
 						system("pause");
 					}
 					else
@@ -414,7 +414,7 @@ void consulta()
 				}
 					
 				if (achou != 1)
-					printf("\nCurso n„o encontrado");
+					printf("\nCurso n√£o encontrado");
 				else 
 					printf("\nTotal de faltas de todos os alunos do curso: %d", faltastotal);
 				
@@ -432,7 +432,7 @@ void consulta()
 				return;
 				break;
 			default:
-				printf("\nOpc„o inv·lida utilize somente os n˙meros de 1 a 5\n");
+				printf("\nOpc√£o inv√°lida utilize somente os n√∫meros de 1 a 5\n");
 				system("pause");
 				return;
 		}
@@ -463,7 +463,7 @@ void alteracao()
 		{
 			do
 			{
-				printf("\n\nRGM n„o cadastrado");
+				printf("\n\nRGM n√£o cadastrado");
 				printf("\n\nDeseja continuar? (S/N)\n");
 				fflush(stdin);
 				scanf("%c", &dc);
@@ -493,7 +493,7 @@ void alteracao()
 							gets(nome[id]);
 							if (nome[id][0] == '\0' || nome[id][0] == ' ')
 							{
-								printf("\nDigite novamente, sem espaÁos no comeÁo.\n");
+								printf("\nDigite novamente, sem espa√ßos no come√ßo.\n");
 								system("pause");
 							} 
 							else
@@ -513,7 +513,7 @@ void alteracao()
 							gets(curso[id]);
 							if (curso[id][0] == '\0' || curso[id][0] == ' ') 
 							{
-								printf("\nDigite novamente, sem espaÁos no comeÁo.\n");
+								printf("\nDigite novamente, sem espa√ßos no come√ßo.\n");
 								system("pause");
 							}
 							else
@@ -533,7 +533,7 @@ void alteracao()
 							scanf("%f", &n1[id]);
 							if (n1[id] < 0 || n1[id] > 10)
 							{
-								printf("\nN1 inv·lida, digite somente os n˙meros de 0 a 10.\n");
+								printf("\nN1 inv√°lida, digite somente os n√∫meros de 0 a 10.\n");
 								system("pause");
 							}
 							else
@@ -549,7 +549,7 @@ void alteracao()
 							scanf("%f", &n2[id]);
 							if (n2[id] < 0 || n2[id] > 10)
 							{
-								printf("\nN2 inv·lida, digite somente os n˙meros de 0 a 10.\n");
+								printf("\nN2 inv√°lida, digite somente os n√∫meros de 0 a 10.\n");
 								system("pause");
 							}
 							else
@@ -565,7 +565,7 @@ void alteracao()
 							scanf("%d", &faltas[id]);
 							if (faltas[id] < 0 || faltas[id] > 80) 
 							{
-								printf("\nO total de faltas n„o ser menor que 0 e nem maior que 80.\n");	
+								printf("\nO total de faltas n√£o ser menor que 0 e nem maior que 80.\n");	
 								system("pause");
 							} 
 						}
@@ -574,7 +574,7 @@ void alteracao()
 					case 6:
 						break;
 					default:
-						printf("\n\nOpÁ„o inv·lida, utilize somente os n˙meros de 1 a 6.\n");	
+						printf("\n\nOp√ß√£o inv√°lida, utilize somente os n√∫meros de 1 a 6.\n");	
 						system("pause");
 				}
 			}
@@ -606,7 +606,7 @@ void exclusao()
 		}
 		if (achourgm != 1)
 		{
-			printf("\n\nRGM n„o encontrado");
+			printf("\n\nRGM n√£o encontrado");
 			do
 			{
 				printf("\n\nDeseja continuar? (S/N)\n");
@@ -625,7 +625,7 @@ void exclusao()
 				printf("\nN1: %f", n1[id]);
 				printf("\nN2: %f", n2[id]);
 				printf("\nTotal de faltas: %d", faltas[id]);
-				printf("\n\n(1) Confirmar exclus„o");
+				printf("\n\n(1) Confirmar exclus√£o");
 				printf("\n(2) Voltar\n");
 				fflush(stdin);
 				scanf("%d", &exclusao);
@@ -638,14 +638,14 @@ void exclusao()
 					n2[id] = '\0';
 					media[id] = '\0';
 					faltas[id] = '\0';
-					printf("\nAluno excluÌdo com sucesso");
+					printf("\nAluno exclu√≠do com sucesso");
 					printf("\n\nDeseja continuar? (S/N)");
 					fflush(stdin);
 					scanf("%c", &dc);
 				}
 				else if (exclusao != 1 && exclusao != 2)
 				{
-					printf("\nOpÁ„o inv·lida, utilize somentes os n˙meros (1) e (2)");
+					printf("\nOp√ß√£o inv√°lida, utilize somentes os n√∫meros (1) e (2)");
 					system("pause");
 				}
 			}
@@ -736,7 +736,7 @@ void relatorio()
 				gets(cursoconsulta);
 				if (cursoconsulta[0] == '\0' || cursoconsulta[0] == ' ')
 				{
-					printf("\nDigite novamente, sem espaÁos no comeÁo.\n");
+					printf("\nDigite novamente, sem espa√ßos no come√ßo.\n");
 					system("pause");
 				}
 				else
@@ -805,14 +805,14 @@ void relatorio()
 			}
 			else
 			{
-				printf("\nCurso n„o encontrado\n\n");
+				printf("\nCurso n√£o encontrado\n\n");
 				system("pause");
 			}			
 			achou = 0;
 		}
 		else if (escolha != 3)
 		{
-			printf("\n\nOpÁ„o inv·lida, utilize somente os n˙meros de 1 a 3\n\n");
+			printf("\n\nOp√ß√£o inv√°lida, utilize somente os n√∫meros de 1 a 3\n\n");
 			system("pause");
 		}
 	}
