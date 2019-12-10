@@ -61,3 +61,7 @@ Crie o menu de opções para:
 - e) Devolver a quantidade total de leite que vai ser produzido por semana na fazenda, após o abate
 - f) Devolver a quantidade total de alimento que vai ser consumido por semana na fazenda, após o abate 
 - g) Devolver número de cabeças de gado que iram para o abate.
+
+Exercicio GPS: Dada uma matriz quadrada 10x10 elabore um programa que permita calcular a distancia entre as cidadas dado um percurso via teclado, considerando os requisitos da planilha.
+- O Usuario entra com a cidade de origem e a cidade de destino e o programa deverá apresentar o percurso e o valor de qualquer cidade para qualquer cidade.
+- O usuario poderá fazer um percurso entre mais de uma cidade! Deverão ser impressos a distancia total, a distancia entre os percursos, o valor total e o valor entre os percursos exibindo as informações após o termino do usuario.
