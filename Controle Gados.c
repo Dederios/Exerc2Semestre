@@ -30,8 +30,8 @@ int main()
 	setlocale(LC_ALL, "Portuguese");
 	do
 	{
-		idade = 0;
-		cont++;
+	    idade = 0;
+	    cont++;
 		
 	    printf("\t\t\t\t\t[Bem vindo a tela de cadastro]");
 	    printf("\n\nCódigo da cabeça do gado: ");
@@ -40,15 +40,15 @@ int main()
 	    
 	    printf("\nLitros de Leite produzido por semana: ");
 	    fflush(stdin);
-        scanf("%f",&gado[cont].leite);
+	    scanf("%f",&gado[cont].leite);
 	    
 	    printf("\nQuantidade de alimentos ingerido por semana (KG): ");
 	    fflush(stdin);
-        scanf("%f",&gado[cont].alim);
+            scanf("%f",&gado[cont].alim);
 	    
 	    printf("\nAno de Nascimento: ");
 	    fflush(stdin);
-		scanf("%d",&gado[cont].ano);
+	    scanf("%d",&gado[cont].ano);
 	    
 	    idade = 2019 - gado[cont].ano;
 	    
@@ -65,15 +65,15 @@ int main()
 	    else
 	    {
 	    	gado[cont].abate = 'N';
-		}
-		do
-		{
-			printf("\nDeseja continuar ? [S/N]\n");
+	    }
+	    do
+	    {
+		printf("\nDeseja continuar ? [S/N]\n");
 	    	fflush(stdin);
 	    	scanf("%c", &dc);
-		}
-		while (toupper(dc) != 'S' && toupper(dc) != 'N');
-		system("cls");
+	    }
+	    while (toupper(dc) != 'S' && toupper(dc) != 'N');
+	    system("cls");
 	}
 	while (toupper(dc) == 'S');
 		    
@@ -85,9 +85,9 @@ int main()
 		printf("\n(C) Quantidade total de leite que vai ser produzido por uma semana na fazenda, apos o abate.");
 		printf("\n(D) Quantidade total de alimento que vai ser consumido por semana na fazenda, após o abate.");
 		printf("\n(E) Numero de cabeças de gado que iriam para o abate.");
-	    printf("\n(F) Sair\n");
-	    fflush(stdin);
-	    scanf("%c",&menu);
+	        printf("\n(F) Sair\n");
+	        fflush(stdin);
+	        scanf("%c",&menu);
 	    
 	    switch (toupper(menu))
 	    {
