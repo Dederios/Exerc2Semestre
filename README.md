@@ -49,3 +49,15 @@ Tela de Exclusão:
 Tela de Relatório:
 - Relatório 1: Devem ser listados em forma de relatorio todos os Alunos que estão REPROVADOS.
 - Relatorio 2: Deve ser informado o curso e o sistema exibir todos os alunos do curso em ordem alfabética!
+
+Exercício Controle de Gado: Elaborar um algoritmo que auxilie no controle de uma fazenda de gado. A base de dados é formada por um conjunto de estruturas (registros).
+
+a) Ler a base de dados (código, leite, alim, nasc), armazenado em um vetor de estruturas. 
+b) Preencher o campo abate, considerando que a cabeça de gado irá para o abate caso: tenha mais de 5 anos, ou produza menos de 40 litros de leite por semana, ou produza entre 50 e 70 litros de leite por semana e ingira mais de 50 quilos de alimento por dia.
+
+Crie o menu de opções para:
+- c) Devolver a quantidade total de leite produzida por semana na fazenda. 
+- d) Devolver a quantidade total de alimento consumido por semana na fazenda. 
+- e) Devolver a quantidade total de leite que vai ser produzido por semana na fazenda, após o abate
+- f) Devolver a quantidade total de alimento que vai ser consumido por semana na fazenda, após o abate 
+- g) Devolver número de cabeças de gado que iram para o abate.
