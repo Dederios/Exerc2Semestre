@@ -56,12 +56,12 @@ int main()
 	    {
 	    	gado[cont].abate = 'S';
 	    	gado_abate++;
-		}
-		else if (gado[cont].leite >= 50 && gado[cont].leite <= 70 && gado[cont].alim / 7 > 50)
-		{
-			gado[cont].abate = 'S';
+	    }
+	    else if (gado[cont].leite >= 50 && gado[cont].leite <= 70 && gado[cont].alim / 7 > 50)
+	    {
+		gado[cont].abate = 'S';
 	    	gado_abate++;
-		}
+	    }
 	    else
 	    {
 	    	gado[cont].abate = 'N';
