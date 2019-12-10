@@ -78,7 +78,7 @@ int main()
 		else
 		{
 			x++;
-			printf ("O %dº percurso foi de %s até %s", x, cidade(origem[i]), cidade(destino[i]));
+			printf("O %dº percurso foi de %s até %s", x, cidade(origem[i]), cidade(destino[i]));
 			printf("\nDistância: %dKM", distancia[i]);
 			printf("\nCusto: R$%d\n\n", custo[i]);
 		}
