@@ -32,7 +32,7 @@ int main()
 		idade = 0;
 		cont++;
 	    printf("\t\t\t\t\t[Bem vindo a tela de cadastro]");
-	    printf("\n\nCÛdigo da cabeÁa do gado: ");
+	    printf("\n\nC√≥digo da cabe√ßa do gado: ");
 	     fflush(stdin);
 	    scanf("%d",&gado[cont].cod);
 	    
@@ -81,8 +81,8 @@ int main()
 		printf("(A) Quantidade total de leite produzida em uma semana.");
 		printf("\n(B) Quantidade total de alimento consumido por semana na fazenda.");
 		printf("\n(C) Quantidade total de leite que vai ser produzido por uma semana na fazenda, apos o abate.");
-		printf("\n(D) Quantidade total de alimento que vai ser consumido por semana na fazenda, apÛs o abate.");
-		printf("\n(E) Numero de cabeÁas de gado que iriam para o abate.");
+		printf("\n(D) Quantidade total de alimento que vai ser consumido por semana na fazenda, ap√≥s o abate.");
+		printf("\n(E) Numero de cabe√ßas de gado que iriam para o abate.");
 	    printf("\n(F) Sair\n");
 	    fflush(stdin);
 	    scanf("%c",&menu);
@@ -178,7 +178,7 @@ void num_abates()
 {
 	system("cls");
 	printf("--------------------------------------------------------");
-	printf("\nTotal de gados que ir„o ao abate: %d", gado_abate);
+	printf("\nTotal de gados que ir√£o ao abate: %d", gado_abate);
 	printf("\n--------------------------------------------------------\n\n");
 	system("pause");
 }
