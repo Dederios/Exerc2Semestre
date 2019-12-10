@@ -1,7 +1,7 @@
-#include<string.h>
-#include<stdlib.h>
-#include<stdio.h>
-#include<ctype.h>
+#include <string.h>
+#include <stdlib.h>
+#include <stdio.h>
+#include <ctype.h>
 #include <locale.h>
 
 void total_leite();
@@ -18,6 +18,7 @@ struct abatimento
 	float alim;
 	char abate;	
 };
+
 struct abatimento gado[30];
 
 int cont = 0, gado_abate = 0;
@@ -31,9 +32,10 @@ int main()
 	{
 		idade = 0;
 		cont++;
+		
 	    printf("\t\t\t\t\t[Bem vindo a tela de cadastro]");
 	    printf("\n\nCódigo da cabeça do gado: ");
-	     fflush(stdin);
+	    fflush(stdin);
 	    scanf("%d",&gado[cont].cod);
 	    
 	    printf("\nLitros de Leite produzido por semana: ");
