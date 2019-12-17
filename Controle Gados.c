@@ -89,29 +89,29 @@ int main()
 	        fflush(stdin);
 	        scanf("%c",&menu);
 	    
-	    switch (toupper(menu))
-	    {
-	    	case 'A':
-	    		total_leite();
-	    		break;
-	    	case 'B':
-	    		total_alim();
-	    		break;
-	    	case 'C':
-	    		leite_apos();
-	    		break;
-	    	case 'D':
-	    		alim_apos();
-	    		break;
-	    	case 'E':
-	    		num_abates();
-	    		break;
-	    	case 'F':
-	    		return 0;
-	    		break;
-	    	default:
-	    		printf("\n\nOpcao invalida...\n\n");
-	    		system("pause");
+	    	switch (toupper(menu))
+	    	{
+	    		case 'A':
+	    			total_leite();
+	    			break;
+	    		case 'B':
+	    			total_alim();
+	    			break;
+	    		case 'C':
+	    			leite_apos();
+	    			break;
+	    		case 'D':
+	    			alim_apos();
+	    			break;
+	    		case 'E':
+	    			num_abates();
+	    			break;
+	    		case 'F':
+	    			return 0;
+	    			break;
+	    		default:
+	    			printf("\n\nOpcao invalida...\n\n");
+	    			system("pause");
 		}
 	}	
 	while (menu != 'F');
