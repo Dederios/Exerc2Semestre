@@ -1,5 +1,5 @@
 # Exerc2Semestre
-Exercícios do segundo semestre de Análise e Desenvolvimento de Sistemas - Disciplina: TecProg II.
+Exercícios do 2º semestre de Análise e Desenvolvimento de Sistemas - Disciplina: TecProg II.
 
 Exercício 1: Elabore um algoritmo em C para ler dez elementos numéricos em um vetor e imprimir o maior e o menor numero.
 
