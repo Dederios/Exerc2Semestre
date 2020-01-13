@@ -48,7 +48,7 @@ int main()
 				trajeto(dp, origem, destino, cont, totalcusto);
 				erro = verificao(origem[cont],destino[cont]);
 			}
-			while (erro == 1);
+			while(erro == 1);
 		
 			dadosTrajeto(dp, origem, destino, custo, distancia, cont);
 			
@@ -63,15 +63,15 @@ int main()
 				fflush(stdin);
 				scanf("%c",&dc);
 			}
-			while (toupper(dc) != 'S' && toupper(dc) != 'N');
+			while(toupper(dc) != 'S' && toupper(dc) != 'N');
 			system("cls");	
 		}
 	}
-	while (escolha == 1);
+	while(escolha == 1);
 	system("cls");
 	for (int i = 0; i < cont; i++)
 	{
-		if (dp[origem[i]][destino[i]] == -1)
+		if(dp[origem[i]][destino[i]] == -1)
 		{
 			continue;
 		}
@@ -89,7 +89,7 @@ int main()
 
 void trajeto(int dp[10][10], int origem[100], int destino[100], int cont, int totalcusto)
 {
-	if (cont < 1 || totalcusto == 0)
+	if(cont < 1 || totalcusto == 0)
 	{
 		printf("\n\nEntre com o ID da cidade de origem: ");
 		fflush(stdin);
@@ -100,7 +100,7 @@ void trajeto(int dp[10][10], int origem[100], int destino[100], int cont, int to
 	}
 	else
 	{
-		if (dp[origem[cont-1]][destino[cont-1]] == -1)
+		if(dp[origem[cont-1]][destino[cont-1]] == -1)
 			origem[cont] = origem[cont-1];
 		else
 			origem[cont] = destino[cont-1];
@@ -115,7 +115,7 @@ void trajeto(int dp[10][10], int origem[100], int destino[100], int cont, int to
 int verificao(int origem, int destino)
 {
 	int erro = 0;
-	if (origem > 9 || origem < 0)
+	if(origem > 9 || origem < 0)
 	{
 		printf("\nCidade de origem inválida");
 		erro = 1;
@@ -125,7 +125,7 @@ int verificao(int origem, int destino)
 		printf("\nCidade de destino inválida");
 		erro = 1;
 	}
-	else if (origem == destino)
+	else if(origem == destino)
 	{
 		printf("\nAs cidades não podem ser a mesma");
 		erro = 1;
@@ -135,19 +135,19 @@ int verificao(int origem, int destino)
 
 void dadosTrajeto(int dp[][10], int origem[100], int destino[100], int custo[100], int distancia[100], int cont)
 {
-	if (dp[origem[cont]][destino[cont]] == 0 || dp[destino[cont]][origem[cont]] == 0)
+	if(dp[origem[cont]][destino[cont]] == 0 || dp[destino[cont]][origem[cont]] == 0)
 	{
 		printf("\nCidade vizinha, o custo é de uma taxa fixa de R$75.00");
 		custo[cont] = 75;
 		distancia[cont] = 0;
 	}
-	else if (dp[origem[cont]][destino[cont]] == -1)
+	else if(dp[origem[cont]][destino[cont]] == -1)
 	{
 		printf ("\nO trajeto não é realizado pela empresa.");
 		custo[cont] = 0;
 		distancia[cont] = 0;
 	}
-	else if (destino[cont] == 0 || origem[cont] == 9)
+	else if(destino[cont] == 0 || origem[cont] == 9)
 	{
 		system("cls");
 		printf("O percurso %s de até %s é de: %dKM", cidade(origem[cont]), cidade(destino[cont]), dp[destino[cont]][origem[cont]]);
