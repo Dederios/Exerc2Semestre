@@ -22,8 +22,7 @@ void exclusao();
 void relatorio();
 //Declaração das funções
 
-void gotoxy(int x, int y)
-{
+void gotoxy(int x, int y) {
 	SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE),(COORD){x-1,y-1});
 }
 
@@ -32,8 +31,7 @@ float n1[10], n2[10], media[10];
 char data[11], rgm[10][10], nome[10][20], curso[10][20];
 //Varíaveis Globais
 
-int main()
-{
+int main() {
 	strcpy(data,__DATE__);
 	setlocale(LC_ALL, "Portuguese");
 	int menu = 0;
@@ -79,8 +77,7 @@ int main()
 	while (menu != 6);
 }
 
-int Menu()
-{
+int Menu() {
 	int op = 1, key, menu = 0;
 	while(1) 
 	{
@@ -120,8 +117,7 @@ int Menu()
 }
 
 
-void cadastro()
-{
+void cadastro() {
 	int tamanho = 0;
 	char ano[3], contchar[10];
 	char dc = 0;
@@ -234,8 +230,7 @@ void cadastro()
 	while (toupper(dc) == 'S');
 }
 
-void consulta()
-{
+void consulta() {
 	int achou = 0, x = 0, notamaior = 0, tamanho = 0, faltastotal = 0, achourgm = 0, id = 0;
 	char dc, nconsulta[50], cursoconsulta[50], rgmconsulta[10];
 	do 
@@ -440,8 +435,7 @@ void consulta()
 	while (toupper(dc) != 'N');
 }
 
-void alteracao()
-{
+void alteracao() {
 	int id = 0, alteracao = 0, tamanho = 0, achourgm = 0;
 	char dc, rgmalteracao[10];
 	do
@@ -585,8 +579,7 @@ void alteracao()
 	while (toupper(dc) == 'S' && alteracao != 6);
 }
 
-void exclusao()
-{
+void exclusao() {
 	int id = 0, alteracao = 0, tamanho = 0, exclusao = 0, achourgm = 0;
 	char dc, rgmexclusao[10];
 	do
@@ -656,8 +649,7 @@ void exclusao()
 	while (toupper(dc) == 'S');
 }
 
-void relatorio()
-{
+void relatorio() {
 	int escolha = 0, i = 0, flag = 0, linha = 3, tamanho = 0, x = 0, achou = 0, id = 0;
 	char dc, cursoconsulta[50], ordenado[10][20], aux[20], troca;
 	do
