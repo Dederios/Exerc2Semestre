@@ -10,8 +10,7 @@ void leite_apos();
 void alim_apos();
 void num_abates();
 
-struct abatimento 
-{
+struct abatimento {
 	int cod;
 	int ano;
 	float leite;
@@ -23,8 +22,7 @@ struct abatimento gado[30];
 
 int cont = 0, gado_abate = 0;
 	
-int main()
-{
+int main() {
 	int idade;
 	char dc, menu, data[8],ano[3];
 	setlocale(LC_ALL, "Portuguese");
@@ -117,8 +115,7 @@ int main()
 	while (menu != 'F');
 }
 
-void total_leite()
-{
+void total_leite() {
 	float leite_total = 0;
 	system("cls");
 	for (int i = 1; i <= cont; i++)
@@ -130,8 +127,7 @@ void total_leite()
 	system("pause");
 }
 
-void total_alim()
-{
+void total_alim() {
 	float tot_alim = 0;
 	system("cls");
 	for (int i = 1; i <= cont; i++)
@@ -160,8 +156,7 @@ void leite_apos()
 	system("pause");	
 }
 
-void alim_apos()
-{
+void alim_apos() {
 	float tot_alim = 0;
 	system("cls");
 	for (int i = 1; i <= cont; i++)
@@ -176,8 +171,7 @@ void alim_apos()
 	system("pause");	
 }
 
-void num_abates()
-{
+void num_abates() {
 	system("cls");
 	printf("--------------------------------------------------------");
 	printf("\nTotal de gados que irão ao abate: %d", gado_abate);
