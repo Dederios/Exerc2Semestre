@@ -10,8 +10,7 @@ void dadosTrajeto(int dp[10][10], int origem[100], int destino[100], int custo[1
 void guiaTuristico(int destino);
 char *cidade(int num);
 
-int main()
-{
+int main() {
 	setlocale(LC_ALL, "Portuguese");
   char dc = 'N';
 	int origem[100], destino[100], erro = 0, distancia[100], custo[100], totalcusto = 0, percursototal = 0, cont = 0, x = 0, escolha = 0;
@@ -87,8 +86,7 @@ int main()
 	return 0;
 }
 
-void trajeto(int dp[10][10], int origem[100], int destino[100], int cont, int totalcusto)
-{
+void trajeto(int dp[10][10], int origem[100], int destino[100], int cont, int totalcusto) {
 	if(cont < 1 || totalcusto == 0)
 	{
 		printf("\n\nEntre com o ID da cidade de origem: ");
@@ -112,8 +110,7 @@ void trajeto(int dp[10][10], int origem[100], int destino[100], int cont, int to
 	}
 }
 	
-int verificao(int origem, int destino)
-{
+int verificao(int origem, int destino) {
 	int erro = 0;
 	if(origem > 9 || origem < 0)
 	{
