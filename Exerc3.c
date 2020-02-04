@@ -13,24 +13,26 @@ int main() {
 		printf("\nDigite o numero do aluno: ");
 		fflush(stdin);
 		scanf("%d", &n[i]);
+		
 		printf("Digite a altura do aluno: ");
 		fflush(stdin);
 		scanf("%f", &altura[i]);
+		
 		printf("\n");
 		
-		if (altura[i] > alturamaior )
-		{
+		if (altura[i] > alturamaior) {
 			alturamaior = altura[i];
 			numeromaior = n[i];	
 		}
 		
-		if (altura[i] < alturamenor)
-		{
+		if (altura[i] < alturamenor) {
 			alturamenor = altura[i];
 			numeromenor = n[i];
 		}
 	}
+	
 	printf("\nO numero do menor aluno: %d com o tamanho de %.2f", numeromenor, alturamenor);
 	printf("\nO numero do maior aluno: %d com o tamanho de %.2f", numeromaior, alturamaior);
+	
 	return 0;
 }
