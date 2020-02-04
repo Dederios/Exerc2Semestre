@@ -8,8 +8,7 @@ char gabarito[11], aluno[20][20], curso[20][20], respostas[20][11], situacao[20]
 void verificar(); //Declaração das funções
 void dados();
 
-int main()
-{
+int main() {
 	printf("Digite o gabarito: ");
 	gets (gabarito);
 	
@@ -23,8 +22,7 @@ int main()
 	return 0;	
 }
 
-void dados()
-{
+void dados() {
 	int dc = 0;
 	
 	do 
@@ -50,8 +48,7 @@ void dados()
 	while (dc == 1);
 }
 
-void verificar()
-{
+void verificar() {
 	int x = 0, notas = 0;
 	
 	for (i = 0; i < qtdaluno; i++)
