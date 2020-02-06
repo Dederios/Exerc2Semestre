@@ -26,8 +26,7 @@ int main() {
 	int idade;
 	char dc, menu, data[8],ano[3];
 	setlocale(LC_ALL, "Portuguese");
-	do
-	{
+	do {
 	    idade = 0;
 	    cont++;
 		
@@ -64,8 +63,7 @@ int main() {
 	    {
 	    	gado[cont].abate = 'N';
 	    }
-	    do
-	    {
+	    do {
 		printf("\nDeseja continuar ? [S/N]\n");
 	    	fflush(stdin);
 	    	scanf("%c", &dc);
@@ -75,8 +73,7 @@ int main() {
 	}
 	while (toupper(dc) == 'S');
 		    
-	do
-	{
+	do {
 		system("cls");
 		printf("(A) Quantidade total de leite produzida em uma semana.");
 		printf("\n(B) Quantidade total de alimento consumido por semana na fazenda.");
@@ -139,8 +136,7 @@ void total_alim() {
 	system("pause");
 }
 
-void leite_apos()
-{
+void leite_apos()c{
 	float leite_total = 0;
 	system("cls");
 	
