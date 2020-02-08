@@ -12,7 +12,7 @@
 #define KEY_DOWN 80
 #define KEY_ESC 27
 #define KEY_ENTER 13
-//Declaração do macrro que faz o menu de setas
+//Declaração do macro que faz um menu de setas
 
 int Menu();
 void cadastro();
