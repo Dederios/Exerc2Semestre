@@ -86,7 +86,7 @@ int main() {
 	return 0;
 }
 
-void trajeto(int dp[10][10], int origem[100], int destino[100], int cont, int totalcusto) {
+void trajeto(int dp[10][10], int origem[100], int destino[100], int cont, int totalcusto){
 	if(cont < 1 || totalcusto == 0)
 	{
 		printf("\n\nEntre com o ID da cidade de origem: ");
@@ -110,7 +110,7 @@ void trajeto(int dp[10][10], int origem[100], int destino[100], int cont, int to
 	}
 }
 	
-int verificao(int origem, int destino) {
+int verificao(int origem, int destino){
 	int erro = 0;
 	if(origem > 9 || origem < 0)
 	{
@@ -129,9 +129,7 @@ int verificao(int origem, int destino) {
 	}	
 	return erro;
 }
-
-void dadosTrajeto(int dp[][10], int origem[100], int destino[100], int custo[100], int distancia[100], int cont)
-{
+void dadosTrajeto(int dp[][10], int origem[100], int destino[100], int custo[100], int distancia[100], int cont){
 	if(dp[origem[cont]][destino[cont]] == 0 || dp[destino[cont]][origem[cont]] == 0)
 	{
 		printf("\nCidade vizinha, o custo é de uma taxa fixa de R$75.00");
@@ -164,8 +162,7 @@ void dadosTrajeto(int dp[][10], int origem[100], int destino[100], int custo[100
 	}
 }
 
-void guiaTuristico(int destino)
-{
+void guiaTuristico(int destino){
 	switch (destino)
 	{
 		case 4:
@@ -193,8 +190,7 @@ void guiaTuristico(int destino)
 	}
 }
 
-char *cidade(int num)
-{
+char *cidade(int num){
 	switch (num)
 	{
 		case 0:
