@@ -35,8 +35,7 @@ int main() {
 	strcpy(data,__DATE__);
 	setlocale(LC_ALL, "Portuguese");
 	int menu = 0;
-	do
-	{
+	do {
 		system("cls");
 		menu = Menu();
 		switch (menu)
