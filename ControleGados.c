@@ -31,6 +31,7 @@ int main() {
 	    cont++;
 		
 	    printf("\t\t\t\t\t[Bem vindo a tela de cadastro]");
+		
 	    printf("\n\nCódigo da cabeça do gado: ");
 	    fflush(stdin);
 	    scanf("%d",&gado[cont].cod);
