@@ -12,7 +12,7 @@ char *cidade(int num);
 
 int main() {
 	setlocale(LC_ALL, "Portuguese");
-  char dc = 'N';
+  	char dc = 'N';
 	int origem[100], destino[100], erro = 0, distancia[100], custo[100], totalcusto = 0, percursototal = 0, cont = 0, x = 0, escolha = 0;
 	int dp[10][10] = {{-2,107,140,429,72,2981,1427,422,325,408},
 					 {100,-2,223,495,164,3029,1379,432,257,396,},
