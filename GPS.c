@@ -26,12 +26,10 @@ int main() {
 					 {375,350,350,400,325,750,600,550,400,-2}};
 					 
 	printf("Bem vindo ao sistema de GPS.\n\n");
-	do
-	{
+	do {
 		printf("\tCidades Disponiveis\n\n");
 		printf("\t(0) São Paulo \t(1) Sorocaba \n\t(2) Taubate \t(3) Rio \n\t(4) Santos \t(5) Natal \n\t(6) Pelotas \t(7) Barretos \n\t(8) Bauru \t(9) Curitiba");
-		if (toupper(dc) == 'N')
-		{
+		if (toupper(dc) == 'N') {
 			if (totalcusto != 0)
 				printf("\n\n\tDistância total percorrida: %dKM \n\n\tValor total percorrido: R$%d", percursototal, totalcusto);
 				
@@ -39,11 +37,9 @@ int main() {
 			scanf("%d", &escolha);	
 		}
 		if (escolha == 2)
-      break;
-		else
-		{
-			do
-			{
+      			break;
+		else {
+			do {
 				trajeto(dp, origem, destino, cont, totalcusto);
 				erro = verificao(origem[cont],destino[cont]);
 			}
@@ -56,8 +52,7 @@ int main() {
 			
 			cont++;
 			
-			do
-			{
+			do {
 				printf("\n\nDeseja fazer mais um percurso ? (S/N)\n");
 				fflush(stdin);
 				scanf("%c",&dc);
@@ -68,14 +63,11 @@ int main() {
 	}
 	while(escolha == 1);
 	system("cls");
-	for (int i = 0; i < cont; i++)
-	{
-		if(dp[origem[i]][destino[i]] == -1)
-		{
+	for (int i = 0; i < cont; i++) {
+		if(dp[origem[i]][destino[i]] == -1) {
 			continue;
 		}
-		else
-		{
+		else {
 			x++;
 			printf("O %dº percurso foi de %s até %s", x, cidade(origem[i]), cidade(destino[i]));
 			printf("\nDistância: %dKM", distancia[i]);
@@ -87,8 +79,7 @@ int main() {
 }
 
 void trajeto(int dp[10][10], int origem[100], int destino[100], int cont, int totalcusto){
-	if(cont < 1 || totalcusto == 0)
-	{
+	if(cont < 1 || totalcusto == 0) {
 		printf("\n\nEntre com o ID da cidade de origem: ");
 		fflush(stdin);
 		scanf("%d",&origem[cont]);
@@ -96,8 +87,7 @@ void trajeto(int dp[10][10], int origem[100], int destino[100], int cont, int to
 		fflush(stdin);
 		scanf("%d",&destino[cont]);
 	}
-	else
-	{
+	else {
 		if(dp[origem[cont-1]][destino[cont-1]] == -1)
 			origem[cont] = origem[cont-1];
 		else
@@ -112,38 +102,32 @@ void trajeto(int dp[10][10], int origem[100], int destino[100], int cont, int to
 	
 int verificao(int origem, int destino){
 	int erro = 0;
-	if(origem > 9 || origem < 0)
-	{
+	if(origem > 9 || origem < 0) {
 		printf("\nCidade de origem inválida");
 		erro = 1;
 	}
-	else if (destino > 9 || destino < 0)
-	{
+	else if (destino > 9 || destino < 0) {
 		printf("\nCidade de destino inválida");
 		erro = 1;
 	}
-	else if(origem == destino)
-	{
+	else if(origem == destino) {
 		printf("\nAs cidades não podem ser a mesma");
 		erro = 1;
 	}	
 	return erro;
 }
-void dadosTrajeto(int dp[][10], int origem[100], int destino[100], int custo[100], int distancia[100], int cont){
-	if(dp[origem[cont]][destino[cont]] == 0 || dp[destino[cont]][origem[cont]] == 0)
-	{
+void dadosTrajeto(int dp[][10], int origem[100], int destino[100], int custo[100], int distancia[100], int cont) {
+	if(dp[origem[cont]][destino[cont]] == 0 || dp[destino[cont]][origem[cont]] == 0) {
 		printf("\nCidade vizinha, o custo é de uma taxa fixa de R$75.00");
 		custo[cont] = 75;
 		distancia[cont] = 0;
 	}
-	else if(dp[origem[cont]][destino[cont]] == -1)
-	{
+	else if(dp[origem[cont]][destino[cont]] == -1) {
 		printf ("\nO trajeto não é realizado pela empresa.");
 		custo[cont] = 0;
 		distancia[cont] = 0;
 	}
-	else if(destino[cont] == 0 || origem[cont] == 9)
-	{
+	else if(destino[cont] == 0 || origem[cont] == 9) {
 		system("cls");
 		printf("O percurso %s de até %s é de: %dKM", cidade(origem[cont]), cidade(destino[cont]), dp[destino[cont]][origem[cont]]);
 		printf("\nO custo desse percurso foi: R$%d", dp[origem[cont]][destino[cont]]);		
@@ -151,8 +135,7 @@ void dadosTrajeto(int dp[][10], int origem[100], int destino[100], int custo[100
 		custo[cont] = dp[origem[cont]][destino[cont]];
 		guiaTuristico(destino[cont]);
 	}
-	else
-	{
+	else {
 		system("cls");
 		printf("O percurso %s de até %s é de: %dKM", cidade(origem[cont]), cidade(destino[cont]), dp[origem[cont]][destino[cont]]);
 		printf("\nO custo desse percurso foi: R$%d", dp[destino[cont]][origem[cont]]);
@@ -162,9 +145,8 @@ void dadosTrajeto(int dp[][10], int origem[100], int destino[100], int custo[100
 	}
 }
 
-void guiaTuristico(int destino){
-	switch (destino)
-	{
+void guiaTuristico(int destino) {
+	switch (destino) {
 		case 4:
 			printf("\n\n\tOrquidário Municipal de Santos");
 			printf("\n\n\tInaugurado em 1945, é um parque zoobotânico com 22.240m² \n\tque mistura características de belos jardins e aspectos de matas naturais.");
@@ -191,8 +173,7 @@ void guiaTuristico(int destino){
 }
 
 char *cidade(int num){
-	switch (num)
-	{
+	switch (num) {
 		case 0:
 			return (char*)"São Paulo";
 		case 1:
