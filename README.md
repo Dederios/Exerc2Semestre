@@ -1,5 +1,5 @@
 # Exerc2Semestre
-Exercícios feitos do 2º semestre de Análise e Desenvolvimento de Sistemas - Disciplina: TecProg II.
+Exercícios feitos n 2º semestre de Análise e Desenvolvimento de Sistemas - Disciplina: TecProg II.
 
 Exercício 1: Elabore um algoritmo em C para ler dez elementos numéricos em um vetor e imprimir o maior e o menor numero.
 
@@ -56,9 +56,9 @@ b) Preencher o campo abate, considerando que a cabeça de gado irá para o abate
 
 Crie o menu de opções para:
 - c) Devolver a quantidade total de leite produzida por semana na fazenda. 
-- d) Devolver a quantidade total de alimento consumido por semana na fazenda. 
-- e) Devolver a quantidade total de leite que vai ser produzido por semana na fazenda, após o abate
-- f) Devolver a quantidade total de alimento que vai ser consumido por semana na fazenda, após o abate 
+- d) Devolver a quantidade total de alimento consumido por semana na fazenda.
+- e) Devolver a quantidade total de leite que vai ser produzido por semana na fazenda, após o abate.
+- f) Devolver a quantidade total de alimento que vai ser consumido por semana na fazenda, após o abate.
 - g) Devolver número de cabeças de gado que iram para o abate.
 
 Exercicio GPS: Dada uma matriz quadrada 10x10 elabore um programa que permita calcular a distancia entre as cidadas dado um percurso via teclado, considerando os requisitos da planilha.
