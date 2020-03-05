@@ -13,6 +13,7 @@ int main() {
 		if (num[i] > maior) {
 			maior = num[i];
 		}
+		
 		if (num[i] < menor) {
 			menor = num[i];
 		}
