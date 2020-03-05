@@ -38,14 +38,12 @@ int main() {
 	do {
 		system("cls");
 		menu = Menu();
-		switch (menu)
-		{
+		switch (menu) {
 			case 1:
 				cadastro();
 				break;
 			case 2:
-				do
-				{
+				do {
 					system("cls");
 					printf("(1) Consulta por RGM");
 					printf("\n(2) Consulta por nome");
@@ -78,8 +76,7 @@ int main() {
 
 int Menu() {
 	int op = 1, key, menu = 0;
-	while(1) 
-	{
+	while(1) {
 		system("cls");
 		printf("Bem Vindo ao programa de Gestão acadêmica\n");
 		printf("|=====================================|\n");
@@ -120,8 +117,7 @@ void cadastro() {
 	int tamanho = 0;
 	char ano[3], contchar[10];
 	char dc = 0;
-	do
-	{
+	do {
 		cont++;
 		ano[0] = data[9];
 		ano[1] = data[10];
@@ -137,8 +133,7 @@ void cadastro() {
 		}
 		rgm[cont][4] = '\0';
 
-		do 
-		{
+		do {
 			system("cls");
 			printf("RGM: %s\n", rgm[cont]);
 			printf("\nNome: ");
@@ -158,8 +153,7 @@ void cadastro() {
 		}
 		while(nome[cont][0] == '\0' || nome[cont][0] == ' ');
 	
-		do 
-		{
+		do {
 			printf("\nCurso: ");
 			fflush(stdin);
 			gets(curso[cont]);
@@ -177,8 +171,7 @@ void cadastro() {
 		} 
 		while(curso[cont][0] == '\0' || curso[cont][0] == ' ');
 		
-		do
-		{
+		do {
 			printf("\nDigite o N1: ");
 			fflush(stdin);
 			scanf("%f", &n1[cont]);
@@ -190,8 +183,7 @@ void cadastro() {
 		}
 		while (n1[cont] < 0 || n1[cont] > 10);
 		
-		do
-		{
+		do {
 			printf("\nDigite o N2: ");
 			fflush(stdin);
 			scanf("%f", &n2[cont]);
@@ -205,8 +197,7 @@ void cadastro() {
 		
 		media[cont] = (n1[cont]+n2[cont])/2;
 		
-		do
-		{
+		do {
 			printf("\nTotal de faltas: ");
 			fflush(stdin);
 			scanf("%d", &faltas[cont]);
@@ -218,8 +209,7 @@ void cadastro() {
 		}
 		while (faltas[cont] < 0 || faltas[cont] > 80);
 		
-		do
-		{
+		do {
 			printf("\n\nDeseja continuar? (S/N)\n");
 			fflush(stdin);
 			scanf("%c", &dc);
@@ -232,10 +222,8 @@ void cadastro() {
 void consulta() {
 	int achou = 0, x = 0, notamaior = 0, tamanho = 0, faltastotal = 0, achourgm = 0, id = 0;
 	char dc, nconsulta[50], cursoconsulta[50], rgmconsulta[10];
-	do 
-	{
-		switch (submenu)
-		{
+	do {
+		switch (submenu) {
 			case 1:
 				system("cls");
 				printf("Digite o RGM: ");
@@ -262,8 +250,7 @@ void consulta() {
 				
 				achourgm = 0;
 				
-				do
-				{
+				do {
 					printf("\n\nDeseja continuar? (S/N)\n");
 					fflush(stdin);
 					scanf("%c", &dc);
@@ -271,8 +258,7 @@ void consulta() {
 				while (toupper(dc) != 'S' && toupper(dc) != 'N');
 				break;
 			case 2:
-				do
-				{
+				do {
 					system("cls");
 					printf("Entre com o nome: ");
 					fflush(stdin);
@@ -291,8 +277,7 @@ void consulta() {
 				} 
 				while(nconsulta[0] == '\0' || nconsulta[0] == ' ');
 					
-				for (x = 0; x <= cont; x++)
-				{
+				for (x = 0; x <= cont; x++) {
 					if (strcmp(nconsulta,nome[x])==0) 
 					{
 						achou = 1;
@@ -307,8 +292,7 @@ void consulta() {
 					
 				achou = 0;	
 		
-				do
-				{
+				do {
 					printf("\n\nDeseja continuar? (S/N)\n");
 					fflush(stdin);
 					scanf("%c", &dc);
@@ -316,8 +300,7 @@ void consulta() {
 				while (toupper(dc) != 'S' && toupper(dc) != 'N');				
 				break;
 			case 3:
-				do
-				{
+				do {
 					system("cls");
 					printf("Entre com o curso: ");
 					fflush(stdin);
@@ -336,8 +319,7 @@ void consulta() {
 				} 
 				while(cursoconsulta[0] == '\0' || cursoconsulta[0] == ' ');
 				
-				for (x = 0; x <= cont; x++)
-				{
+				for (x = 0; x <= cont; x++) {
 					if (strcmp(cursoconsulta,curso[x])==0)
 					{
 						achou = 1;
@@ -348,8 +330,7 @@ void consulta() {
 					}
 				}
 					
-				for (x = 0; x <= cont; x++)
-				{
+				for (x = 0; x <= cont; x++) {
 					if (strcmp(cursoconsulta,curso[x])==0)
 					{
 						if (media[x] >= notamaior)
@@ -364,8 +345,7 @@ void consulta() {
 					
 				achou = 0;	
 				
-				do
-				{
+				do {
 					printf("\n\nDeseja continuar? (S/N)\n");
 					fflush(stdin);
 					scanf("%c", &dc);
@@ -374,8 +354,7 @@ void consulta() {
 				break;
 			case 4:
 				faltastotal = 0;
-				do
-				{
+				do {
 					system("cls");
 					printf("Entre com o curso: ");
 					fflush(stdin);
@@ -394,8 +373,7 @@ void consulta() {
 				} 
 				while(cursoconsulta[0] == '\0' || cursoconsulta[0] == ' ');
 					
-				for (x = 0; x <= cont; x++)
-				{
+				for (x = 0; x <= cont; x++) {
 					if (strcmp(cursoconsulta,curso[x])==0) 
 					{
 						achou = 1;
@@ -414,8 +392,7 @@ void consulta() {
 				
 				achou = 0;
 				
-				do
-				{
+				do {
 					printf("\n\nDeseja continuar? (S/N)\n");
 					fflush(stdin);
 					scanf("%c", &dc);
@@ -437,14 +414,12 @@ void consulta() {
 void alteracao() {
 	int id = 0, alteracao = 0, tamanho = 0, achourgm = 0;
 	char dc, rgmalteracao[10];
-	do
-	{
+	do {
 		system("cls");
 		printf("Entre com o RGM do aluno: ");
 		fflush(stdin);
 		gets(rgmalteracao);
-		for (int i = 0; i <= cont; i++)
-		{
+		for (int i = 0; i <= cont; i++) {
 			if (strcmp(rgmalteracao,rgm[i])==0)
 			{
 				achourgm = 1;
@@ -454,8 +429,7 @@ void alteracao() {
 		}
 		if (achourgm != 1)
 		{
-			do
-			{
+			do {
 				printf("\n\nRGM não cadastrado");
 				printf("\n\nDeseja continuar? (S/N)\n");
 				fflush(stdin);
@@ -465,8 +439,7 @@ void alteracao() {
 		}
 		else
 		{
-			do
-			{
+			do {
 				system("cls");
 				printf("(1)Alterar nome, atual: %s", nome[id]);
 				printf("\n(2)Alterar curso, atual: %s", curso[id]);
@@ -581,14 +554,12 @@ void alteracao() {
 void exclusao() {
 	int id = 0, alteracao = 0, tamanho = 0, exclusao = 0, achourgm = 0;
 	char dc, rgmexclusao[10];
-	do
-	{
+	do {
 		system("cls");
 		printf("Entre com o RGM do aluno: ");
 		fflush(stdin);
 		gets(rgmexclusao);
-		for (int i = 0; i <= cont; i++)
-		{
+		for (int i = 0; i <= cont; i++) {
 			if (strcmp(rgmexclusao,rgm[i])==0)
 			{
 				achourgm = 1;
@@ -599,8 +570,7 @@ void exclusao() {
 		if (achourgm != 1)
 		{
 			printf("\n\nRGM não encontrado");
-			do
-			{
+			do {
 				printf("\n\nDeseja continuar? (S/N)\n");
 				fflush(stdin);
 				scanf("%c", &dc);
@@ -609,8 +579,7 @@ void exclusao() {
 		}
 		else
 		{
-			do
-			{
+			do {
 				system("cls");
 				printf("Nome: %s", nome[id]);
 				printf("\nCurso: %s", curso[id]);
@@ -651,8 +620,7 @@ void exclusao() {
 void relatorio() {
 	int escolha = 0, i = 0, flag = 0, linha = 3, tamanho = 0, x = 0, achou = 0, id = 0;
 	char dc, cursoconsulta[50], ordenado[10][20], aux[20], troca;
-	do
-	{
+	do {
 		system("cls");
 		printf("(1) Relatorio dos reprovados");
 		printf("\n(2) Relatorio do curso");
