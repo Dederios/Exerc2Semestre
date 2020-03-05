@@ -15,8 +15,7 @@ int main() {
 	dados();
 	verificar();
 
-	for (i = 0; i < qtdaluno; i++)
-	{
+	for (i = 0; i < qtdaluno; i++) {
 		printf("\n%s do curso %s, conseguiu %d pontos e foi %s. ", aluno[i], curso[i], nota[i], situacao[i]);
 	}
 	return 0;	
@@ -25,8 +24,7 @@ int main() {
 void dados() {
 	int dc = 0;
 	
-	do 
-	{
+	do {
 		qtdaluno++;
 		printf("\nDigite o nome do %d aluno: ", qtdaluno);
 		fflush(stdin);
@@ -51,24 +49,19 @@ void dados() {
 void verificar() {
 	int x = 0, notas = 0;
 	
-	for (i = 0; i < qtdaluno; i++)
-	{
+	for (i = 0; i < qtdaluno; i++) {
 		notas = 0;
-		for (x = 0; x <= 10; x++)
-		{
-			if (respostas[i][x] == gabarito[i])
-			{
+		for (x = 0; x <= 10; x++) {
+			if (respostas[i][x] == gabarito[i]) {
 				notas++;
 			}
 		}
 		nota[i] = notas;
 		
-		if (nota[i] >= 5)
-		{
+		if (nota[i] >= 5) {
 			strcpy(situacao[i], "aprovado");
 		}
-		else if (nota[i] < 5)
-		{
+		else if (nota[i] < 5) {
 			strcpy(situacao[i], "reprovado");
 		}
 	}
