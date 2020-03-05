@@ -50,18 +50,15 @@ int main() {
 	    
 	    idade = 2019 - gado[cont].ano;
 	    
-	    if (idade > 5 || gado[cont].leite < 40)
-	    {
+	    if (idade > 5 || gado[cont].leite < 40) {
 	    	gado[cont].abate = 'S';
 	    	gado_abate++;
 	    }
-	    else if (gado[cont].leite >= 50 && gado[cont].leite <= 70 && gado[cont].alim / 7 > 50)
-	    {
+	    else if (gado[cont].leite >= 50 && gado[cont].leite <= 70 && gado[cont].alim / 7 > 50) {
 		gado[cont].abate = 'S';
 	    	gado_abate++;
 	    }
-	    else
-	    {
+	    else {
 	    	gado[cont].abate = 'N';
 	    }
 	    do {
@@ -85,8 +82,7 @@ int main() {
 	        fflush(stdin);
 	        scanf("%c",&menu);
 	    
-	    	switch (toupper(menu))
-	    	{
+	    	switch (toupper(menu)) {
 	    		case 'A':
 	    			total_leite();
 	    			break;
@@ -116,7 +112,7 @@ int main() {
 void total_leite() {
 	float leite_total = 0;
 	system("cls");
-	for (int i = 1; i <= cont; i++)
+	for(int i = 1; i <= cont; i++)
 		leite_total += gado[i].leite;
 			
 	printf("--------------------------------------------------------");
@@ -137,12 +133,11 @@ void total_alim() {
 	system("pause");
 }
 
-void leite_apos()c{
+void leite_apos() {
 	float leite_total = 0;
 	system("cls");
 	
-	for (int i = 1; i <= cont; i++)
-	{
+	for (int i = 1; i <= cont; i++) {
 		if (gado[i].abate == 'N')
 			leite_total += gado[i].leite;		
 	}
@@ -156,8 +151,7 @@ void leite_apos()c{
 void alim_apos() {
 	float tot_alim = 0;
 	system("cls");
-	for (int i = 1; i <= cont; i++)
-	{
+	for (int i = 1; i <= cont; i++) {
 		if (gado[i].abate == 'N')
 			tot_alim += gado[i].alim;
 	}
