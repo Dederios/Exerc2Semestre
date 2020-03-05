@@ -8,8 +8,7 @@ int main() {
 	printf("Digite o numero de alunos: ");
 	scanf("%d", &alunos);
 	
-	for (i = 0; i < alunos; i++)
-	{
+	for (i = 0; i < alunos; i++) {
 		printf("\nDigite o numero do aluno: ");
 		fflush(stdin);
 		scanf("%d", &n[i]);
