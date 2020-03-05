@@ -25,8 +25,7 @@ int main() {
 	
 	printf("\n\nSequencia invertida: ");
 	
-	for (i = 0; i < 20; i++)
-	{
+	for (i = 0; i < 20; i++) {
 		printf("%d ", n[i]);
 	}
 }
