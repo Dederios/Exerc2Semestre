@@ -73,6 +73,7 @@ int main() {
 		    
 	do {
 		system("cls");
+		
 		printf("(A) Quantidade total de leite produzida em uma semana.");
 		printf("\n(B) Quantidade total de alimento consumido por semana na fazenda.");
 		printf("\n(C) Quantidade total de leite que vai ser produzido por uma semana na fazenda, apos o abate.");
